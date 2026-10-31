@@ -48,3 +48,4 @@ Automated tests cover unique menu IDs and integer prices, discounts and fees, se
 
 Implementation uses shared components in `src/components/shared.tsx`, customer routes in `src/features/storefront.tsx`, owner routes in `src/features/admin.tsx`, shared context in `src/state.tsx`, domain rules in `src/data.ts`, extracted menu in `src/menu.ts`, and responsive styling in `src/style.css`. The entry point is `src/main.tsx`.
 "# Cuba" 
+"# Cuba" 
