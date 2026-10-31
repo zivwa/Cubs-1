@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-31T00:00:00Z",
+  "title": "Design System: Cubs Bakery & Cakes",
+  "extensions": {
+    "colorMeta": {
+      "brand": {"role": "primary", "displayName": "Warm Bakery Brown"},
+      "gold": {"role": "secondary", "displayName": "Pastry Gold"},
+      "canvas": {"role": "neutral", "displayName": "Cream Paper"}
+    },
+    "shadows": [
+      {"name": "toast", "value": "0 8px 30px #251c2133", "purpose": "Floating feedback"},
+      {"name": "mobile-nav", "value": "0 12px 18px #35271818", "purpose": "Expanded storefront navigation"}
+    ],
+    "motion": [
+      {"name": "button-hover", "value": "background 0.18s", "purpose": "Primary button hover"},
+      {"name": "product-hover", "value": "transform 0.3s", "purpose": "Image scale to 1.035; disabled under reduced motion"}
+    ],
+    "breakpoints": [
+      {"name": "mobile", "value": "700px"},
+      {"name": "intermediate", "value": "1050px"},
+      {"name": "wide", "value": "1500px"}
+    ]
+  },
+  "components": [
+    {"name": "Primary Button", "kind": "button", "refersTo": "button-primary", "description": "Main customer and owner action", "html": "<button class=\"ds-button\">Add to bag</button>", "css": ".ds-button{font:600 13px 'DM Sans',sans-serif;background:var(--wine,#793c2e);color:#fffaf1;min-height:46px;padding:13px 22px;border:0;border-radius:5px;cursor:pointer;transition:background .18s}.ds-button:hover{background:#542a20}.ds-button:focus-visible{outline:3px solid #b47731;outline-offset:4px}@media(prefers-reduced-motion:reduce){.ds-button{transition:none}}"},
+    {"name": "Text Field", "kind": "input", "refersTo": "input", "description": "Shared form field", "html": "<input class=\"ds-input\" aria-label=\"Name\" placeholder=\"Name\">", "css": ".ds-input{font:13px 'DM Sans',sans-serif;background:#fffefa;color:#38271e;border:1px solid #d7cdbe;border-radius:5px;padding:12px 13px;min-height:45px}.ds-input:focus-visible{outline:3px solid #b47731;outline-offset:4px}"}
+  ],
+  "narrative": {
+    "overview": "Warm editorial bakery storefront; restrained operational owner desk. Preserve the supplied Cubs paw logo at its original aspect ratio and the warm brand palette. Photographs are illustrative and labelled.",
+    "keyCharacteristics": [],
+    "rules": [],
+    "dos": ["Do retain the warm logo-led palette and original logo aspect ratio.", "Do keep the customer display hierarchy and practical owner data density.", "Do provide visible focus and labelled illustrative imagery."],
+    "donts": ["Don't describe every image or container as having the same radius; arches and local container variants are part of the shipped system."]
+  }
+}
